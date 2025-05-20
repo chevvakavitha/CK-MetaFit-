@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CK Metafit | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Navbar styling */
+    body {
+      margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7fa;
+      color: #222;
+    }
+    .navbar {
+      display: flex; justify-content: space-between; align-items: center;
+      background: #004a99;
+      padding: 1rem 2rem;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .logo {
+      color: #fff; font-weight: 700; font-size: 1.8rem;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0;
+    }
+    nav ul li a {
+      color: #fff; text-decoration: none; font-weight: 600;
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ff6f00;
+      color: white;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url('https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+    .hero button {
+      margin-top: 2rem;
+      background: #ff6f00;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(255,111,0,0.6);
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background: #e65c00;
+    }
+
+    /* Services preview on Home */
+    .services-preview {
+      background: #fff;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin-top: -100px;
+      position: relative;
+      z-index: 10;
+    }
+    .service-card {
+      background: #f9f9f9;
+      padding: 1.8rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(255,111,0,0.3);
+    }
+    .service-card img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+    .service-card h3 {
+      color: #004a99;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .service-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #004a99;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .services-preview {
+        margin-top: -50px;
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">CK Metafit</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Transform Pain into Power</h1>
+    <p>Experience cutting-edge AI-driven fitness and health solutions designed for your lifestyle.</p>
+    <button onclick="window.location.href='services.html'">Explore Services</button>
+  </section>
+
+  <section class="services-preview">
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3063/3063820.png" alt="AI Training Icon" />
+      <h3>Personalized AI Training</h3>
+      <p>Customized workout plans powered by intelligent data analysis for maximum results.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Nutrition Icon" />
+      <h3>Smart Nutrition Plans</h3>
+      <p>Balanced meal plans tailored to your health goals with AI-based recommendations.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Mindfulness Icon" />
+      <h3>Mindfulness Coaching</h3>
+      <p>Guided meditation and mental wellness support to boost your mind and body harmony.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="24/7 Support Icon" />
+      <h3>24/7 AI Support</h3>
+      <p>Instant assistance and health tracking to keep you motivated anytime, anywhere.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CK Metafit. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
